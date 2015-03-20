@@ -14,7 +14,8 @@ public class Demo {
 		//**************************************************
 		
 		//Testing Knapsack Problem
-		Item[] myItems = new Item[5];
+		//*************************************************
+		/*Item[] myItems = new Item[5];
 		//Initialization:
 		myItems[0] = new Item(5, 4);
 		myItems[1] = new Item(4, 2);
@@ -43,9 +44,27 @@ public class Demo {
 		}
 		System.out.println();
 		System.out.println("Total Profit is " + totalProf);
-		System.out.println("Total weight of items is " + totalWeight);
+		System.out.println("Total weight of items is " + totalWeight);  */
+		//******************************************************
+		//******************************************************
 		
+		//Testing LCS (longest common subsequence)
+	/*	LCS demolcs = new LCS("ABCBDAB", "BDCABA");
+		demolcs.findLCS();
+		System.out.println("Longest Common Subsequence is "+ demolcs.getLCS()+ " and the length of it is "+ demolcs.getLCSLength());
 		
+		*/
+		
+		//**********************************************************
+		//**********************************************************
+		//Testing Matrix Multiplication Chain problem
+		int[] sizes = {10,20,1,40,5,30,15};
+		int n = 6;
+		MatrixChainProduct mcpdemo = new MatrixChainProduct(n, sizes);
+		mcpdemo.MCP_Mem(0, n-1);
+		System.out.println("The Calculation Steps:");
+		System.out.println(mcpdemo.MCP_M());
+		System.out.println(mcpdemo.MCP_Multiplication(0, n-1));
 		
 	}	
 
